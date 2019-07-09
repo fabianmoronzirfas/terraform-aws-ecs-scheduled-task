@@ -76,8 +76,8 @@ resource "aws_cloudwatch_event_target" "scheduled_task" {
     launch_type         = "${var.launch_type}"
 
     network_configuration {
-      subnets          = ["${var.subnets}"]
-      security_groups  = ["${var.security_groups}"]
+      subnets          = var.subnets
+      security_groups  = var.security_groups
       assign_public_ip = "${var.assign_public_ip}"
     }
   }
