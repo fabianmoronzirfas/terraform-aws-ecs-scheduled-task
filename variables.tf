@@ -8,12 +8,6 @@ variable "environment" {
   description = "Environment - appended to var.name for resources"
 }
 
-variable "network_mode" {
-  type        = "string"
-  description = "Task network mode"
-  default     = "bridge"
-}
-
 variable "container_definitions" {
   type        = "string"
   description = "Task container defintions"
@@ -47,7 +41,7 @@ variable "memory" {
 
 variable "network_mode" {
   type        = "string"
-  description = "Task network mode"
+  description = "Task network mode awsvpc or bridge"
   default     = "awsvpc"
 }
 
