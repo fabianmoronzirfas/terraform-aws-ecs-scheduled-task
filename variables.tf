@@ -52,12 +52,12 @@ variable "launch_type" {
 
 variable "subnets" {
   description = "List of subnets if network_mode is `awsvpc`"
-  default     = []
+  # default     = []
 }
 
 variable "security_groups" {
   description = "List of security groups if network_mode is `awsvpc`"
-  default     = []
+  # default     = []
 }
 
 variable "assign_public_ip" {
